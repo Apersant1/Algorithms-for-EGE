@@ -8,4 +8,19 @@ def bubbleSort(arr):
     return arr
 
 
-print(bubbleSort([1, 5, 7, 2, 9]))
+def minMax3(a, b, c):
+    max = 0
+    min = 0
+    if (a > b and a > c):
+        max = a
+    if (b > a and b > c):
+        max = b
+    if (c > a and c > b):
+        max = c
+    if (a < b and a < c):
+        min = a
+    if (b < a and b < c):
+        min = b
+    if (c < a and c < b):
+        min = c
+    print(f"min= {min}\n max={max}")
